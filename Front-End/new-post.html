@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='./assets/css/style.css'>
+  <link rel="icon" href="./assets/img/logo.png">
+
+  <title> Filepedia - New Post </title>
+</head>
+
+<body requires-login>
+  <div component="nav"></div>
+
+  <div class="content">
+    <h1 class="centered"> Create your publication here </h1>
+
+    <form>
+      <p class="error tac"></p>
+
+      <label>
+        Title: <br>
+        <input name="title" type="text" maxlength="100">
+      </label>
+
+      <label>
+        Subtitle: <br>
+        <input name="subtitle" type="text" placeholder="The text shown in the home page" maxlength="500">
+      </label>
+
+      <label>
+        Body: <br>
+        <textarea name="body" type="text" placeholder="HTML or plain text" rows="5" maxlength="20000"></textarea>
+      </label>
+
+      <input type="submit" value="Publish" class="btn">
+      <button type="button" class="btn fullw" onclick="openPreview()"> Preview </button>
+    </form>
+
+    <div class="post"></div>
+  </div>
+
+  <script src='./assets/js/global.js'></script>
+  <script src='./assets/js/new-post.js'></script>
+</body>
+
+</html>

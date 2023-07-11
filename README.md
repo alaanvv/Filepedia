@@ -20,3 +20,5 @@ Inspired on the retro web style
 - Run `Back-End/install.bat`
 
 - Use `run.bat` to start the App
+
+> Sure, you can change the Web Server

@@ -10,12 +10,12 @@ function _fetch(endpoint, body) {
 }
 
 // Send not logged user to account page
-if (document.body.hasAttribute('requires-login') && !localStorage.getItem('logged')) window.location.href = '/account.html'
+if (document.body.hasAttribute('requires-login') && !localStorage.getItem('logged')) window.location.href = './account.html'
 
 // Account
 function exitAccount() {
   localStorage.removeItem('logged')
-  window.location.href = '/account.html'
+  window.location.href = './account.html'
 }
 
 // Replace components

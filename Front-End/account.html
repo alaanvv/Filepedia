@@ -5,25 +5,25 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <link rel='stylesheet' href='./assets/css/style.css'>
-  <link rel="icon" href="./assets/img/logo.png">
+  <link rel='icon' href='./assets/img/logo.png'>
 
   <title> Filepedia - Account </title>
 </head>
 
 <body>
-  <div component="banner"></div>
+  <div component='banner'></div>
 
-  <div class="content tac">
+  <div class='content tac'>
     <h1> Account </h1>
 
-    <p class="error"> </p>
-    <form class="halfw">
-      <label> Username: <br> <input name="username" type="text"> </label>
-      <label> Password: <br> <input name="password" type="password"> </label>
+    <p class='error'> </p>
+    <form class='halfw'>
+      <label> Username: <br> <input name='username' type='text' autoComplete='none'> </label>
+      <label> Password: <br> <input name='password' type='password'> </label>
 
-      <div class="horizontal centered">
-        <button class="btn" onclick="sendData('login')"> Login </button>
-        <button class="btn" onclick="sendData('register')"> Register </button>
+      <div class='horizontal centered'>
+        <button class='btn' onclick='sendData("login")'> Login </button>
+        <button class='btn' onclick='sendData("register")'> Register </button>
       </div>
     </form>
   </div>

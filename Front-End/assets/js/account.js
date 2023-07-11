@@ -9,7 +9,7 @@ function sendData(endpoint) {
       if (!res.status) showErrorMessage(res.error)
       else {
         localStorage.setItem('logged', username)
-        window.location.href = '/index.html'
+        window.location.href = './index.html'
       }
     })
 

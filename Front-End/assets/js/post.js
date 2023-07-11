@@ -9,7 +9,7 @@ _fetch('post', {id: new URLSearchParams(window.location.search).get('id')})
           deleteBtn.innerText = ' (Delete Post)'
           deleteBtn.onclick = () => {
             _fetch('delete-post', {id})
-              .then(() => { window.location.href = '/' })
+              .then(() => { window.location.href = './' })
           }
         }
       })

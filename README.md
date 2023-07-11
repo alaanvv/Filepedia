@@ -11,3 +11,12 @@ Inspired on the retro web style
 - **Mysql** for database management  
 - **Flask** to communicate front-end with the database  
 - **Vanilla JS**
+
+---
+
+## Usage
+- Install [MySql](https://dev.mysql.com/downloads/installer/) and [Xampp](https://www.apachefriends.org/download.html)
+- Place `Front-End` inside `C:/xampp/htdocs`
+- Run `Back-End/install.bat`
+
+- Use `run.bat` to start the App

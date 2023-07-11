@@ -1,7 +1,9 @@
-# Filepedia
+<img src="https://github.com/alaanvv/Image-Database/blob/main/Filepedia/banner.png?raw=true">
 
-Publish murder archives here so a hunter can use it later  
-Inspired on the retro web style  
+<p align='center'>
+Publish murder archives here so a hunter can use it later <br>
+Inspired on the retro web style
+</p>
 
 <img src="https://github.com/alaanvv/Image-Database/blob/main/Filepedia/supernatural-archive.png?raw=true">
 

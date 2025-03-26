@@ -1,6 +1,6 @@
 // Send request to the Flask app
 function _fetch(endpoint, body) {
-  return fetch(`http://localhost:666/${endpoint}`, {
+  return fetch(`https://filepedia.onrender.com//${endpoint}`, {
     method: 'POST',
     headers: new Headers({'content-type': 'application/json'}),
     body: JSON.stringify(body)

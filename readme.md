@@ -3,12 +3,12 @@
 <p align='center'>
 Publish murder archives here so a hunter can use it later <br>
 Inspired on the retro web style <br>
-
-If things aren't working, wait two minutes and try again, <br>
-I'm using a free plan to host it so it goes down with no requests
 </p>
 
 <img src="https://github.com/alaanvv/Image-Database/blob/main/Filepedia/supernatural-archive.png?raw=true">
+
+If things aren't working, wait two minutes and try again, <br>
+I'm using a free plan to host it so it goes down with no requests
 
 ---
 

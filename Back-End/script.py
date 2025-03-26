@@ -12,4 +12,4 @@ app = Flask('Filepedia')
 CORS(app)
 Router(app)
 
-app.run(port=os.getenv('PORT'))
+app.run(debug=False, host='0.0.0.0', port=int(os.getenv('PORT')))

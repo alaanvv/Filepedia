@@ -1,8 +1,12 @@
 from flask import request, jsonify
+from dotenv import load_dotenv
 from database import Database
 from validate import *
+import os
 
-db = Database('localhost', 3306, 'root', 'filepedia')
+load_dotenv()
+
+db = Database(os.getenv('DB_HOST'), int(os.getenv('DB_PORT')), os.getenv('DB_USER'), os.getenv('DB_NAME'), os.getenv('DB_PASSWORD'))
 
 def Router(app):
   @app.route('/register', methods = ['POST'])

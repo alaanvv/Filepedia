@@ -2,9 +2,30 @@ import pymysql
 
 class Database:
     # Must ping always, because I'm using a global connection
-    def __init__(self, host, port, user, db):
-        self.connection = pymysql.connect(host = host, port = port, user = user, db = db)
+    def __init__(self, host, port, user, db, password):
+        self.connection = pymysql.connect(host = host, port = port, user = user, db = db, password = password)
         self.cursor = self.connection.cursor()
+        create_users_table = """
+        CREATE TABLE IF NOT EXISTS users (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            username VARCHAR(255) NOT NULL UNIQUE,
+            password VARCHAR(255) NOT NULL,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+        """
+        create_posts_table = """
+        CREATE TABLE IF NOT EXISTS posts (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            title VARCHAR(255) NOT NULL,
+            subtitle VARCHAR(255),
+            body TEXT NOT NULL,
+            author VARCHAR(255) NOT NULL,
+            timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+        """
+        self.cursor.execute(create_users_table)
+        self.cursor.execute(create_posts_table)
+        self.connection.commit()
 
     # Account
     def register(self, username, password):
